@@ -1,111 +1,83 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,500&display=swap');
+</style>
+*{
     margin: 0;
     padding: 0;
-    background: gray;
 }
-section{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 400px;
-    width: 1200px;
-    background: #000;
-    box-shadow: 0 25px 30px rgba(0,0,0,0.5);
-    display: flex;
-}
-.container{
-    width: calc(50% - 50px);
-    height: 100%;
-    background: #000;
-    box-sizing: border-box;
-    color: #fff;
-    padding: 20px 30px;
-  
-}
-h1{
+body{
     text-align: center;
-    text-transform: uppercase;
+}
+.wrapper{
+    width: 1170px;
+    margin: 0 auto;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background: #F62A4B;
+    z-index: 12;
+    position: fixed;
+}
+.logo{
+    width: 30%;
+    float: left;
+    line-height: 100px;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    float: right;
+    line-height: 100px;
+}
+nav a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 4px;
     font-size: 20px;
-    letter-spacing: 3px;
+    margin: 0 10px;
+    color: #fff;
 }
-p{
-    letter-spacing: 2px;
-}
-.imagebox{
-    width: calc(50% + 50px);
-    height: 100%;
-    background: #f00;
-    box-sizing: border-box;
-    border-left: 100px solid #000;  
-    border-bottom: 400px solid transparent;
-}
-img{
-    border: 5px solid #fff;
-    border-radius: 10px;
-    margin-top: 50px;
-}
-.center{
-    margin-top: 400px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
-    height: 400px;
-}
-.box{
+.banner-area{
     width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    height: 500px;
+    position: fixed;
+    top: 100px;
+    background: url(/assets/laptop.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+.banner-area h2{
+    padding-top: 8%;
+    font-size: 70px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #0B022D;
+}
+.contact-area{
+    width: 100%;
+    height: 1500px;
     background: #fff;
-    box-shadow: -5px 5px 10px rgba(0,0,0,.2);
-    transform: rotate(-40deg) skewY(25deg);
-    transition: .5s;
-}
-.box:hover{
-    top: 20px;
-    box-shadow: none;
-}
-.box:before{
-    content: '';
-    position: absolute;
-    top: -20px;
-    left: 15px;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, .2);
-    box-shadow: -5px 5px 10px rgba(0,0,0,.2);
-    transition: .5s;
-}
-.box:hover:before{
-    top: 0;
-    left: 0;
-    box-shadow: none;
-}
-.shadow{
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,.2);
-    position: absolute;
-    top: 20px;
-    left: 0;
-    z-index: -1;
-    transform: rotate(-40deg) skewY(25deg);
-    transition: .5s;
+    position: relative;
+    top: 450px;
 
 }
-/*.box img{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    box-shadow: ;
-    transform: rotate(-40deg) skewY(25deg);*/
+.contact-area h2{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 4px;
+    font-size: 40px;
+    padding-top: 30px;
+    margin: 0;
 }
-
+.contact-area p{
+    padding: 2% 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 30px;
+}
 
 
